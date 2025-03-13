@@ -99,7 +99,8 @@ function handleClick(event){
 
   if (!currentProduct) return;
 
-  const id = event.target.dataset.source;
+  const id = event.target.closest('img').dataset.source;
+
 
   const image = images.find((item) => item.original === id);
   
